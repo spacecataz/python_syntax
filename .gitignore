@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Package sub-products:
+primer*.html
+primer*.pdf
+
 # C extensions
 *.so
 
