@@ -14,8 +14,8 @@ users learn the language.
 | 6 | Strings: The gory details of strings and formatting. |
 
 ## Requirements
-Reading the notebooks just takes Github- click on any `*.ipynb` file and
-peruse away!
+**Reading the notebooks just takes Github- click on any `*.ipynb` file and
+peruse away!**
 
 For advanced features or editing, more will be required.
 PDFLaTeX is needed for building LaTeX source files.
