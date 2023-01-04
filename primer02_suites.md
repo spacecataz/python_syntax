@@ -8,7 +8,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.14.4
   kernelspec:
-    display_name: Python 3
+    display_name: Python 3 (ipykernel)
     language: python
     name: python3
 ---
@@ -196,6 +196,7 @@ print(a)
 ```
 
 This is amazing and should be used often.
+
 Functions
 ---------
 Functions are easy to declare and use in Python.  Let's declare one and dissect the pieces.
