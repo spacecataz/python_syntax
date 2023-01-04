@@ -8,6 +8,9 @@ pdf: $(SOURCE)
 html: $(SOURCE)
 	$(CONVERTER) --to html $(SOURCE)
 
+*.ipynb: *.md
+	jupytext --to ipynb $<
+
 # Clean up:
 clean:
 	rm -f *.html *.blg *.dvi *.log *.bbl *~ *.toc *.pdf

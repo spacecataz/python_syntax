@@ -7,6 +7,9 @@ __pycache__/
 primer*.html
 primer*.pdf
 
+# Emacs intermediaries:
+\#*
+
 # C extensions
 *.so
 
