@@ -8,7 +8,7 @@ pdf: $(SOURCE)
 html: $(SOURCE)
 	$(CONVERTER) --to html $(SOURCE)
 
-*.ipynb: *.md
+%.ipynb: %.md
 	jupytext --to ipynb $<
 
 # Clean up:
