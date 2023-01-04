@@ -36,7 +36,7 @@ print( a * c10 )
 This bit of code illustrates several concepts:
 
 * There are four basic variable types: ints, floats, complex, and bools.
-* The usual rules apply for variable naming: Must start with a number, underscores and numbers allowed.
+* The usual rules apply for variable naming: Must start with a letter; underscores and numbers allowed.
 * Python is **case sensitive**.  "B" is a declared variable, "b" is not!
 * Note that boolean True and False must capitalized.
 * We see our happy print statement acting as expected.  Hello, world!
