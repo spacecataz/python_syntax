@@ -18,25 +18,40 @@ users learn the language.
 peruse away!**
 
 For advanced features or editing, more will be required.
-PDFLaTeX is needed for building LaTeX source files.
+<!--PDFLaTeX is needed for building LaTeX source files.
 GNU Make is needed for building PDFs and HTML files.
 To build marked-up HTML for code, ensure you have Pygments installed and
 `pygmentize` is in the search path.
 To convert HTML to PDFs, Wkhtml2pdf is required.
 [Information on obtaining this software on different platforms can
 be found here.](https://wkhtmltopdf.org/downloads.html)
-Jupyter-notebook and Jupyter-nbconvert (version 6 or above) are required for
-editing Jupyter notebooks and converting them to PDFs.  If using pip to
-install nbconvert, use this syntax to enable webpdf formats:
-
-`pip install nbconvert[webpdf]`
-To be able to run the same commands and scripts as contained within this tutorial, you will need Spacepy (which includes Pybats) and all of its dependencies.
+-->
 The tutorials are Jupyter Notebooks.  If you want to be able to run them interactively, you'll need to obtain Jupyter on your machine.
+Jupyter-notebook and Jupyter-nbconvert (version 6 or above) are required for
+editing Jupyter notebooks and converting them to PDFs.
+
+Installing on a Debian-like system is simple:
+
+`sudo apt install jupyter-notebook jupyter-nbconvert`
+
+If using pip to install nbconvert, use this syntax to enable webpdf formats:
+
+`pip3 install nbconvert[webpdf]`
+
 
 Finally, the Jupytext plugin is used to synchronize the markdown and `*.ipynb`
 files.  You'll want to install this plugin if you are contributing to this
 repository.
 [Information on installing and using Jupytext can be found here.](https://jupytext.readthedocs.io/en/latest/index.html)
+
+Note that if the Jupytext menu is not appearing within a notebook, you may
+need to activate the extension within Jupyter (even though Jupytext is
+already installed):
+
+```
+jupyter nbextension install --py jupytext [--user]
+jupyter nbextension enable --py jupytext [--user]
+```
 
 ## Creating Shareable Handouts
 For shareable files, use the included Makefile.
