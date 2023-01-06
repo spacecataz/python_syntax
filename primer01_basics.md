@@ -192,6 +192,13 @@ l1.pop(0)
 print(l1)
 ```
 
+Eventually, we'll see how easy it is to build classes to stamp out our own customized objects with our own customized methods.
+It is one of the strengths of python and opens up new possibilities.
+
+Dictionaries
+------------
+Python's mapping object is called a dictionary.  For the uninitiated, mappings map a single number or string to an object in no particular order.  The relationship is known as a _key-value paring_.  A good use for them would be an address book, or for organizing groups of objects that are related but not necessarily ordered.  Let's play a bit.
+
 ```python
 d1 = {'Dan':'Super person', 'Aaron':'Okay in small doses'}
 # Curly braces denote dictionaries, colons separate keys and values, comma separates pairs.
@@ -224,3 +231,12 @@ print(d2['len'](d2['l2']))       # Use the function inside the dictionary to act
 
 What we did here was execute the function __len__, stored in dictionary _d2_ under key _'len'_, by handing it list _l2_ stored in _d2_ under key _'l2'_.  Note how we use the syntax: we used parentheses to treat the syntax _d2['len']_ as if we had called __len__ explicitly.  This natural way to store and access objects in complicated structures is one of Python's strengths.
 
+In scientfic programming, a common way to leverage dictionaries is as an
+organizational tool for datasets. For example, a satellite data file may have
+timeseries data for magnetic fields, plasma measurements, and others.
+The data *belong* together and share a common time axes. In this case, a
+dictionary can gather that data together. If `sat` is your data dictionary,
+`sat['time']` would contain your time array, `sat['bx']` would contain your
+x-component of the magnetic field, etc. Each dictionary value would be an
+array, each with the same shape as the time array. This makes for easy
+plotting and a natural way to access data values by name.
