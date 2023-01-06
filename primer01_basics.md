@@ -175,6 +175,7 @@ print(b)       # This is what "b" looks like.
 print(b.shape) # This attribute tells us that "b" is 1D.
 print(b.mean())# This method gives us the mean of all values within "b".
 print(b.mean)  # Printing without the parentheses tells us it's a method.
+print(type(b)) # See the object "type" of b.
 ```
 
 By exploring object methods, we see that our sequences do a lot of really cool stuff.  Even better, the **help()** function (IPython's _?_ operator) and IPython's tab-complete allow for on-the-fly object exploration.
