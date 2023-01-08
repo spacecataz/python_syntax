@@ -16,7 +16,10 @@ jupyter:
 <!-- #region -->
 String Formatting: The Gory Details
 ===================
+
 Creating well-formatted strings is one of the most useful skills in any language.  It is necessary for creating readable ASCII files, clean plot titles, and text that reflects the result of a dynamic calculation.
+The fundamental issue is inserting values stored within variables, whether they are floating point, integers, or strings
+themselves, into new strings while keeping the output organized and readable.
 Let's explore the syntax for doing this in Python.
 
 String formatting comes via a process known as **string interpolation**.  String interpolation is when the python interpreter takes a string value as typed and replaces certain characters with characters not easily typed- newlines, the values from variables, or special symbols.  To indicate where in a string interpolation should occur, we'll use two tools: **escape characters** and **replacement fields**.  There are different types of strings and string methods that allow us to control when, where, and how interpolation happens.
@@ -44,6 +47,8 @@ print('We can produce unicode characters, too: \u2665\U0001F40D') # I love me so
 ```
 
 There are many useful escape characters, here is a complete list.  Note that some work differently in different environments.  For example, the form feed escape character (`\f`) doesn't work properly within Jupyter notebooks.
+Additionally, the bell sequence (`\a`), a critical tool for creating annoying scripts that make your friends' computers
+beep incessantly, does not produce an audible sound on some environments. In other words, **YMMV** (your mileage may vary).
 
 | Escape Sequence | Result |
 |:----------------|:-------|
@@ -61,13 +66,63 @@ There are many useful escape characters, here is a complete list.  Note that som
 
 
 
-Raw Strings & Special String Literals
+Raw Strings
 -----------
 So what if we *don't* want string interpolation?  This happens a lot- when writing file paths or regular expression syntax.  If you try to do this, string interpolation can cause exceptions or have other unsavory impacts on our work.  Take this example:
 
 ```python
-file_path = ''
+# In Windows, file paths uses backslashes instead of forward slashes:
+file_path = 'C:\Users\new_user\toobox\backup_scripts'
+
+# Printing this is going to cause a lot of problems!
 print(file_path)
+```
+
+Oh, no! The python string tried to *interpolate* all of my slashes into escape sequences. I could brute-force this by using double slashes, which is the escape sequence to get a single backspace:
+
+```python
+# Let's use double-slashes to get things right:
+file_path = 'C:\\Users\\new_user\\toobox\\backup_scripts'
+
+# Printing this does not cause problems:
+print(file_path)
+```
+
+This is a clumsy solution, however. What we want is a way to *turn off interpolation*. We want a **raw string**.
+Raw strings are preceded by either `r` or `R`:
+
+```python
+# Let's use double-slashes to get things right:
+file_path = r'C:\Users\new_user\toobox\backup_scripts'
+
+# Printing this does not cause problems:
+print(file_path)
+```
+
+Raw strings are often important when interpolation is giving you trouble. They can be crticial when you're working with strings that contain HTML, XML, or $\LaTeX$ syntax or URLs.
+
+
+String Formatting with the `.format()` method
+---
+
+
+
+
+Gory Details: The String Format Mini-Language
+----
+
+```python
+
+```
+
+In-String Formatting: F-Strings
+----
+
+
+
+```python
+
+
 ```
 
 ```python

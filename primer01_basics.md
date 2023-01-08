@@ -8,7 +8,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.14.4
   kernelspec:
-    display_name: Python 3 (ipykernel)
+    display_name: Python 3
     language: python
     name: python3
 ---
@@ -182,11 +182,13 @@ By exploring object methods, we see that our sequences do a lot of really cool s
 
 
 ```python
+# Example 1: the "upper" method
 help(a.upper)
 print(a.upper())
 ```
 
 ```python
+# Example 2: the "pop" method
 help(l1.pop)
 print(l1)
 l1.pop(0)
@@ -227,7 +229,7 @@ A dictionary value can be any object.  Because everything is an object in Python
 
 ```python
 d2={'a':a, 'l2':l2, 'len':len}  # Store two lists and a function in a dictionary.
-print(d2['len'](d2['l2']))       # Use the function inside the dictionary to act on a list.
+print(d2['len'](d2['l2']))      # Use the function inside the dictionary to act on a list.
 ```
 
 What we did here was execute the function __len__, stored in dictionary _d2_ under key _'len'_, by handing it list _l2_ stored in _d2_ under key _'l2'_.  Note how we use the syntax: we used parentheses to treat the syntax _d2['len']_ as if we had called __len__ explicitly.  This natural way to store and access objects in complicated structures is one of Python's strengths.
