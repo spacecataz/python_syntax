@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Skip Jupyter Notebook files, those do not get tracked.
+*.ipynb
+
 # Package sub-products:
 primer*.html
 primer*.pdf

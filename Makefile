@@ -14,3 +14,4 @@ html: $(SOURCE)
 # Clean up:
 clean:
 	rm -f *.html *.blg *.dvi *.log *.bbl *~ *.toc *.pdf
+	rm -f test*.txt *.pkl
