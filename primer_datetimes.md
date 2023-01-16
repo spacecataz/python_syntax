@@ -8,7 +8,7 @@ jupyter:
       format_version: '1.3'
       jupytext_version: 1.14.4
   kernelspec:
-    display_name: Python 3
+    display_name: Python 3 (ipykernel)
     language: python
     name: python3
 ---
@@ -69,10 +69,27 @@ While it is possible to create a simple `date` object or a `time` object, those 
 
 ## `timedelta` basics
 
-The other critical object is the `timedelta` class. This is an object that contains some length of time. There are two 
+The other critical object is the `timedelta` class. This is an object that contains some length of time between two `datetimes`. There are two basic 
 ways to construct these objects
 
+```python
+# Express the time difference explicitly
+delta1 = dt.timedelta(days=10, hours=5, seconds=2)
+print(delta1)
 
-## Addition and Subtraction
+# Subtract to time deltas
+delta2 = t1 - t2
+print(delta2)
+```
 
-You cannot add two `datetime` objects, but you _can_ subtract them. When you do, you get a 
+`timedelta` objects have attributes that indicate how much time is covered: `.days`, `.seconds`, `.microseconds`. **The total time is all three of these summed together, not any one individual value.** To see the _total_ time difference as one number, use the `.total_seconds()` method.
+
+```python
+print(delta1.days)
+print(delta1.seconds)
+print(delta1.total_seconds())
+```
+
+```python
+
+```
