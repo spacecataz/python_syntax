@@ -16,10 +16,29 @@ jupyter:
 Scientific Python: Numpy and Matplotlib
 ===============
 
-Python was initially created to be a scripting language
+Python was initially created to be a scripting language. As such, it lacked
+funadmental tools for mathematics: true array and matrix-like objects,
+linear algebra tools, etc.
+With its popularity growth, especially in scientific communities, this
+changed through the addition of external packages.
+While there are many such packages today, including Scipy and Pandas, the
+two most fundamental are **Numpy** and **Matplotlib**.
+Numpy introduces true *arrays*: multidimensional homogenous ordered data
+containers (think *lists*, but N-dimensional and with uniform data types).
+It also contains a wealth of tools related to arrays, from signal processing,
+interpolation, and much more.
+Matplotlib introduces a trove of 1-D and 2-D plotting tools (with some 3-D
+capabilities sprinkled in).
+This incredibly powerful library works hand-in-hand with Numpy arrays.
+In this tutorial, we'll cover some of the basic syntax of these two packages.
+
+Let's cover the basics of Numpy:
 
 ```python
 import numpy as np
+```
+
+```python
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
@@ -43,7 +62,7 @@ It is possible to make this much better by changing the following items:
 - turn on/off the plot grid
 - change the default line width and color order
 
-...and much more. There are several ways to do this, the most obvious is customization when you create the figure/axes/line objects. 
+...and much more. There are several ways to do this, the most obvious is customization when you create the figure/axes/line objects.
 However, this is a lot of repeat work every time you create a plot.
 It is possible to set defaults by [changing the `matplotlibrc` configuration file](https://matplotlib.org/stable/tutorials/introductory/customizing.html#customizing-with-matplotlibrc-files).
 It is also possible to create "style sheets" that customize certain aspects of your plots and load them on command.
