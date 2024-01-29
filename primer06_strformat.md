@@ -280,11 +280,3 @@ print('pi = %.7f'%np.pi)
 
 When you see this string formatting approach, it's best to replace it with modern counterparts (either `format()` or f-strings).
 
-
-```python
-
-```
-
-```python
-
-```
