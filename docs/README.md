@@ -33,3 +33,11 @@ Relative:
 
 Using `/` as repository root:
 [Syntax Basics](/primer01_basics.md)
+
+
+## Trying links with a file inside `/docs/`:
+Absolute:
+[Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/docs/example.md)
+
+Relative:
+[Syntax Basics](example.md)
