@@ -6,4 +6,4 @@ knowledge.
 
 | # | Topic | Download|
 |---|-------|---------|
-| 1 | [Syntax Basics](../primer01_basics.md) | [primer01.ipynb](../primer01_basics.ipynb) |
+| 1 | [Syntax Basics](primer01_basics.md) | [primer01.ipynb](primer01_basics.ipynb) |
