@@ -7,3 +7,8 @@ knowledge.
 | # | Topic | Download|
 |---|-------|---------|
 | 1 | [Syntax Basics](primer01_basics.md) | [primer01.ipynb](primer01_basics.ipynb) |
+
+## Trying links:
+[Syntax Basics](primer01_basics.md)
+[Syntax Basics](../primer01_basics.md)
+[Syntax Basics](primer01_basics.md)
