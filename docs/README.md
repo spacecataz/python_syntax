@@ -11,4 +11,4 @@ knowledge.
 ## Trying links:
 [Syntax Basics](primer01_basics.md)
 [Syntax Basics](../primer01_basics.md)
-[Syntax Basics](primer01_basics.md)
+[Syntax Basics](/primer01_basics.md)
