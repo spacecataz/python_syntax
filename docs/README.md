@@ -29,15 +29,17 @@ Absolute:
 [Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/primer01_basics.md)
 
 Relative:
+links to ../primer01_basics.md
 [Syntax Basics](../primer01_basics.md)
 
 Using `/` as repository root:
+links to /primer01_basics.md
 [Syntax Basics](/primer01_basics.md)
 
 
 ## Trying links with a file inside `/docs/`:
-Absolute:
+Absolute currently links to `the-whole-url/docs/example.md`:
 [Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/docs/example.md)
 
-Relative:
+Relative (currently links to `./docs/example.md`):
 [Syntax Basics](example.md)
