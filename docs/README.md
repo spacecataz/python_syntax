@@ -41,8 +41,8 @@ links to /primer01_basics.md
 Absolute currently links to `the-whole-url/source/example.md`:
 [Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/source/example.md)
 
-Relative (currently links to `source/example.md`):
-[Syntax Basics](source/example.md)
+Site-absolute. (currently links to `/source/example.md`):
+[Syntax Basics](/source/example.md)
 
 Relative-up (currently links to `../source/example.md`):
 [Syntax Basics](../source/example.md)
