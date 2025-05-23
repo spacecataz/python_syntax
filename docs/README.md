@@ -38,8 +38,11 @@ links to /primer01_basics.md
 
 
 ## Trying links with a file inside `/docs/`:
-Absolute currently links to `the-whole-url/docs/example.md`:
-[Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/docs/example.md)
+Absolute currently links to `the-whole-url/source/example.md`:
+[Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/source/example.md)
 
-Relative (currently links to `./docs/example.md`):
-[Syntax Basics](example.md)
+Relative (currently links to `source/example.md`):
+[Syntax Basics](source/example.md)
+
+Relative-up (currently links to `../source/example.md`):
+[Syntax Basics](../source/example.md)
