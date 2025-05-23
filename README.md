@@ -13,6 +13,22 @@ users learn the language.
 | 5 | OOP: Embracing object-oriented programming in Python  |
 | 6 | Strings: The gory details of strings and formatting. |
 
+## omg the link stuff.
+Site-absolute. (currently links to `/source/example.md`):
+[Syntax Basics](./source/example.md)
+[Syntax Basics](python_syntax/source/example.md)
+[Syntax Basics](/python_syntax/source/example.md)
+[Syntax Basics](python_syntax/blob/website/source/example.md)
+[Syntax Basics](python_syntax/blob/website/source/example.md)
+
+Relative-up (currently links to `../source/example.md`):
+[Syntax Basics](../source/example.md)
+
+### Internal to `Docs` links:
+[test page](test.md)
+[test page](./docs/test.md)
+[test page](docs/test.md)
+
 ## Using These Tutorials
 All files are markdown-formatted Jupyter notebooks.
 
@@ -44,7 +60,7 @@ on your machine.
 [Information on installing and using Jupytext can be found here.](https://jupytext.readthedocs.io/en/latest/index.html)
 
 Finally, Jupyter-nbconvert is required for generation of HTML or PDF versions
-of the tutorials. 
+of the tutorials.
 
 Typical installation on a Debian-like machine will look like this:
 
