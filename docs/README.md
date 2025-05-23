@@ -42,7 +42,16 @@ Absolute currently links to `the-whole-url/source/example.md`:
 [Syntax Basics](https://github.com/spacecataz/python_syntax/blob/main/source/example.md)
 
 Site-absolute. (currently links to `/source/example.md`):
-[Syntax Basics](/source/example.md)
+[Syntax Basics](./source/example.md)
+[Syntax Basics](python_syntax/source/example.md)
+[Syntax Basics](/python_syntax/source/example.md)
+[Syntax Basics](python_syntax/blob/website/source/example.md)
+[Syntax Basics](python_syntax/blob/website/source/example.md)
 
 Relative-up (currently links to `../source/example.md`):
 [Syntax Basics](../source/example.md)
+
+### Internal to `Docs` links:
+[test page](test.md)
+[test page](./docs/test.md)
+[test page](docs/test.md)
