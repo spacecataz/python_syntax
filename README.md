@@ -14,11 +14,13 @@ users learn the language.
 | 6 | Strings: The gory details of strings and formatting. |
 
 ## omg the link stuff.
-Site-absolute. (currently links to `/source/example.md`):
-[Syntax Basics](./source/example.md)
-[Syntax Basics](python_syntax/source/example.md)
-[Syntax Basics](/python_syntax/source/example.md)
-[Syntax Basics](python_syntax/blob/website/source/example.md)
+Site-absolute. (currently links to `source/example.md`):
+[Syntax Basics](source/example.md)
+[Primer 1](./primer01_basics.md)
+[Primer 2](./primer02_suites.md)
+[Primer 3](./primer03_fileIO.md)
+[Primer 3](./primer04_modules.md)
+
 [Syntax Basics](python_syntax/blob/website/source/example.md)
 
 Relative-up (currently links to `../source/example.md`):
