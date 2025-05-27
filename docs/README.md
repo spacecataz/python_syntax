@@ -31,7 +31,6 @@ Typical installation on a Debian-like machine will look like this:
 ```
 sudo apt install jupyter-notebook jupyter-nbconvert
 pip3 install jupytext
-
 ```
 
 Note that if the Jupytext menu is not appearing within a notebook, you may
@@ -49,6 +48,10 @@ running and editing the Markdown files as Jupyter notebooks within VSCode:
 [Jupyter (Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 [Jupytext for Notebooks (Fork:Congyiwu)](https://marketplace.visualstudio.com/items?itemName=congyiwu.vscode-jupytext)
 
+
+## File Organization
+
+## Using Jupytext & Markdownfiles
 
 ## Creating Shareable Handouts
 For shareable files, use the included Makefile.
