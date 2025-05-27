@@ -1,8 +1,9 @@
 # python_syntax
-A set of Jupyter notebooks that introduce the basics of Python- from "Hello World" to object oriented coding.
+A set of Jupyter notebooks that introduce the basics of Python- from "Hello World" to object-oriented coding.
 
 These simple notebooks walk through the basics of Python syntax to help new
-users learn the language.
+users learn the language. The primers are a *living* set of tutorials that are
+under consistent development to help improve and expand the material.
 
 The tutorials are listed below; just click and read.
 
@@ -31,7 +32,7 @@ each of these in order is critical.
 | 4 | [Creating Modules](src/primer04_modules.md) |
 | 5 | [Object Oriented Programming](src/primer05_ooprogramming.md) |
 | 6 | [Formatting Strings](src/primer06_strformat.md) |
-| 7 | [Handling Dates & Times](src/primer07_datetimes.md) |
+| 7 | [Handling Dates & Times](src/primer_datetimes.md) |
 
 ### Scientific Python Packages
 The following tutorials cover using the most popular and important packages
@@ -39,7 +40,7 @@ for scientific python programming.
 
 | # | Topic |
 |---|-------|
-| 1 | [Numpy & Matplotlib](src/primer_basics.md) |
+| 1 | [Numpy & Matplotlib](src/primer_numpymatplot.md) |
 
 ### Advanced Topics
 These tutorials present information on more advanced Python topics and modules.
