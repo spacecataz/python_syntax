@@ -40,7 +40,8 @@ for scientific python programming.
 
 | # | Topic |
 |---|-------|
-| 1 | [Numpy & Matplotlib](src/primer_numpymatplot.md) |
+| 1 | [Numpy](src/primer_numpy.md) |
+| 2 | [Matplotlib](src/primer_matplot.md) |
 
 ### Advanced Topics
 These tutorials present information on more advanced Python topics and modules.
