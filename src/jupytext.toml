@@ -1,1 +1,1 @@
-formats = "ipynb,md"
+formats = "ipynb,md:percent"
