@@ -52,6 +52,19 @@ running and editing the Markdown files as Jupyter notebooks within VSCode:
 ## File Organization
 
 ## Using Jupytext & Markdownfiles
+Only the markdown files are saved to the repository. However, equivalent
+`.ipynb` files can be edited as well. Jupyter should recognize the
+Jupytext plugin, allowing you to work in `.ipynb` files that synchronize to
+the markdown (`.md`) files. You can force synchronization via,
+
+```
+jupytext --sync primer_numpy.ipynb
+```
+
+### VS Code
+With the above plugins installed, markdown files can be converted and edited
+in `.ipynb` form via the **Open as Jupyter Notebook** button in the
+upper-right-hand corner of the VS Code screen.
 
 ## Creating Shareable Handouts
 For shareable files, use the included Makefile.
