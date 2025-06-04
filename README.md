@@ -28,7 +28,7 @@ each of these in order is critical.
 |---|-------|
 | 1 | [Syntax Basics](src/primer01_basics.md) |
 | 2 | [Code Suites](src/primer02_suites.md) |
-| 3 | [File Reading & Writing](src/primer03fileIO.md) |
+| 3 | [File Reading & Writing](src/primer03_fileIO.md) |
 | 4 | [Creating Modules](src/primer04_modules.md) |
 | 5 | [Object Oriented Programming](src/primer05_ooprogramming.md) |
 | 6 | [Formatting Strings](src/primer06_strformat.md) |
