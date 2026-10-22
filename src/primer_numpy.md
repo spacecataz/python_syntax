@@ -203,14 +203,84 @@ These two Numpy functions create serial vectors. `arange` uses a "start-stop-ste
 approach, while `linspace` uses a "start-stop-number of points" strategy.
 
 ```python
+#create an array of numbers of 0 to 1 with 0.1 step
 
+#using arange: 
+#start at 0, end at 1
+#step of 0.1
+x = np.arange(0,1,0.1)
+print(x)
+
+#using linspace start at 0, end at 1
+#10 points, because 1/10 = 0.1, obviously
+y = np.linspace(0,1,10)
+print(y)
 ```
 
-One note on `arange` is that it can be tricky sometimes. ENDPOINTS and DATATYPES
+Oh no! There are a couple problems with both functions! 
+
+The `arange` function does not include the end point. This behaviour is not crazy, but maybe unexpected for a normal person. The `arange` function is kind of like a while-loop in its creation. It creates items one after the other, increasing by the step amount every time. Once the current value is >= to end, the loop exits (before adding the value).
+
+The `linspace` function on the other end includes both the start and end values (great!) but the spacing is not what we expected. That's because we made a "geometrical" mistake. Every "step" in our vector has a "point" on the left. For a step of 0.1, that means 10 intervales between 0 and 1, so 10 "left points". However, we also need the last "right point" of the last interval. That means we need an extra point!
+
+Let's create our arrays again, fixing those errors.
+
+```python
+#create an array of numbers of 0 to 1 with 0.1 step
+
+start = 0
+end   = 1
+step  = 0.1
+
+#using arange: 
+#start at 0, end at 1
+#step of 0.1
+x = np.arange(start,end+step,step)
+print(x)
+
+#using linspace start at 0, end at 1
+#10 points, because 1/10 = 0.1, obviously
+npts = int((end-start)/step)+1
+y = np.linspace(start,end,npts)
+print(y)
+```
+
+One note on `arange` is that it can be tricky sometimes. DATATYPES
 
 
 ### Creating Empty-ish Arrays: `zeros`, `ones`, and `eye`
 
+It's sometimes useful to create specific arrays, for example an array full of zeros. Use the numpy `zeros` function!
+
+```python
+#a 1D array with 5 times the zero value
+arr1  = np.zeros(5)
+print(arr1)
+#if the first argument is a scalar, it is equivalent to a 1 item list that specifies the size
+arr1b = np.zeros([5])
+print(arr1b)
+
+#a 2D array of size 5(lines)x3(columns) full of zeroes
+#you must specify the size in a list.
+arr2 = np.zeros([5,3])
+print(arr2)
+```
+Similarly, we can make arrays full of the value one everywhere with the function `ones`.
+
+```python
+#an array full of the value 1 with 1D length 5
+arr3 = np.ones([5])
+print(arr3)
+```
+
+When performing matrix multiplications, we might sometimes need the 
+identity matrix (for example if we need to add an eigenvalue to the
+diagonal elements of a system. The numpy function `eye` is there for you!
+
+```python
+arr4 = np.eye(3,3)
+print(arr4)
+```
 
 ### The Reality: Array Data Comes from Files and Calculations
 In the end, you'll create arrays by populating them via data from files or data from calculations.

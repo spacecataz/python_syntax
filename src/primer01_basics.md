@@ -72,7 +72,7 @@ Let's continue with somewhat more complicated data types: sequences.  Sequences 
 ```python
 a='Ferrets are friends.'
 print('Our string is "%s"' % a) # Old, c-like format codes.
-print('Anoter way is to write "{}"'.format(a))  # New, Python3-like format codes.
+print('Another way is to write "{}"'.format(a))  # New, Python3-like format codes.
 ```
 
 Here, we declare a string and store it using the variable name "a".  Then, we print it to screen with some extra text attached.  We use C-like "%" syntax to substitute variables into string literals.
