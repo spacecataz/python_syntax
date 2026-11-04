@@ -170,6 +170,7 @@ We can look at vertical position, in km (hence the factor of 1000)
 import matplotlib.pyplot as plt #import pyplot from matplotlib
 plt.plot(sol.t, sol.y[0]/1000)  #plot position (/1000 to be in km) vs time
 plt.show()                      #plt.show() creates the actual plot window
+                                #you don't need this plt.show() command in jupyterhub
 ```
 and we can look at the velocity afterwards
 ```
